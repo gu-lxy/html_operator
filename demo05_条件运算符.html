@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>条件运算符</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 条件运算符：也叫三目运算符，或三元运算符。
+		 * 
+		 * 语法：条件？语句1：语句2
+		 */
+		var a = 3;
+		/*
+		 * 先判断条件是否成立：a > 0
+		 * 	成立：true--->语句1
+		 * 	不成立：false--->语句2
+		 */
+		var res = a > 0 ? "正数":"负数"; 
+		console.log(res);
+		
+		var score = 48;
+		var res2 = score >= 60 ? "及格" : "不及格";
+		var res3 = score < 60 ? "不及格" :"及格";
+		console.log(res2);
+		console.log(res3);
+		
+		//练习：给定王二狗的年龄，判断是否大于22岁，如果是输出可以结婚啦，否则输出还小呢
+		var age = 29;
+		var res4 = age >= 22 ? "可以结婚啦" : "还小呢，长大了再说";
+		console.log(res4);
+		
+		
+		
+		
+	</script>
+</html>

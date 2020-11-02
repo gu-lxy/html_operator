@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关系运算符</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 关系运算符：用于比较两个变量的关系，结果是boolean类型
+		 * 	true，false
+		 * >,<,>=,<=
+		 * ==,!=,===,!==
+		 * 
+		 * ==，数值是否相等
+		 * 	只比较数值
+		 * ！=，数值不等
+		 * 
+		 * ===，比较数值和类型
+		 * ！==，数值，或者类型不等
+		 */
+		var a = 4;
+		var b = 3;
+		var res = a >= b;
+		console.log(typeof res);//boolean
+		console.log(res);//true
+		
+		console.log(a <= b);//false
+		console.log(a < b); //false
+		console.log(a > b); //true
+		console.log('a' > 'b');//false
+		console.log('ab'<'ac');
+		//相等和不相等
+		a = 4; //number
+		b = 4; //number
+		c = '4'; //string
+		d = 5;
+		console.log(a == b); //比较a和b的数值,true
+		
+		console.log(a != b); //false
+		console.log(a != d); // true
+		
+		console.log(a === b);//全等
+		console.log(a === c); //false
+		console.log(a == c); // true,只比较数值
+		
+		console.log(a !== c); // true
+		console.log(a !== b); // false
+		/*
+		 * 课堂练习：
+		 * 1.定义两个整数，两个长的像数值的字符串，分别比较：>,<,>=,<=,==,!=,===,!===
+		 * 
+		 */
+		
+		console.log(NaN == NaN);// false
+		console.log(undefined == null);//true
+	</script>
+</html>

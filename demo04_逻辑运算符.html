@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>逻辑运算符</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*
+		 * 逻辑运算符：
+		 * &&：逻辑与运算：规则，两个操作数，如果都是true，结果为true，有一个为false结果就为false。
+		 * 		全真则真，一假则假。
+		 * 
+		 * 		并且的意思
+		 * 
+		 * ||：逻辑或运算：规则，两个操作数，如果有一个为true，结果为true，全都是false，结果才为false
+		 * 		一真则真，全假则假。
+		 * 
+		 * 		或者的意思
+		 * ！：逻辑非运算：规则，取反,一元运算符
+		 * 		!true-->false
+		 * 		!false-->true
+		 */
+	
+
+		var b1 = true;
+		var b2 = true;
+		var b3 = false;
+		var res1 = b1 && b2 && b3;
+		console.log(res1);
+		
+		var a = 3;
+		var b = 2;
+		
+		var res2 = a > b && a != b && a == b && a >= b;
+		/*
+		 * 			true  &&  true  && false && true
+		 */
+		console.log(res2);
+		
+		var res3 = b1 || b2 || b3;
+		console.log(res3);
+		
+		var res4 = a > b || a != b || a == b;
+		console.log(res4);
+		
+		console.log(b1);//true
+		console.log(!b1);//取反,false
+		
+		var num = 123;
+		console.log(typeof num);//number
+		console.log(!num); //false
+		console.log(!!num);//true
+	
+	</script>
+</html>
